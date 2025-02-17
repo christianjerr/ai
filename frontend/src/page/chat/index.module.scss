@@ -1,0 +1,139 @@
+.chatLoader {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+.dodongName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 23px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.absoluteWrapper {
+  // position: relative;
+}
+.userInputFieldWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  left: 50px;
+}
+.userInputField {
+  position: absolute;
+  left: 0;
+  right: 60px;
+  bottom: 0;
+}
+.sendBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  border: none;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+.chatBoxContainer {
+  width: 50%;
+  height: calc(100vh - 300px);
+  position: relative;
+  background: #333334;
+  padding: 50px;
+  border-radius: 20px;
+  padding: 50px;
+}
+.conversationWrapper {
+  border-top: 0.5px solid gray;
+  max-height: calc(100% - 128px);
+  overflow: auto;
+  /* padding-bottom: 40px; */
+  padding: 15px 20px 30px 0;
+  scrollbar-width: thin;
+}
+.userInput {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  img {
+    width: 40px;
+    border-radius: 100%;
+  }
+  p {
+    padding-left: 50px;
+    border-radius: 20px;
+    text-align: right;
+    background: #4e4bf5;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    word-break: break-all;
+    margin-left: 50px;
+  }
+}
+.aiSentence {
+  display: flex;
+  gap: 10px;
+  img {
+    width: 40px;
+    border-radius: 100%;
+  }
+  p {
+    word-break: break-all;
+  }
+}
+.aiInput {
+  border-radius: 20px;
+  background: #5c5e62;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+input {
+  color: black;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .chatBoxContainer {
+    width: 100%;
+    padding: 20px;
+    height: calc(100vh - 100px);
+  }
+  .conversationWrapper {
+    margin-top: 30px;
+    padding: 15px;
+    max-height: calc(100% - 170px);
+  }
+}
+.popups {
+  padding-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  img {
+    cursor: pointer;
+    width: 70px;
+    border-radius: 50%;
+  }
+}
+.selected {
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #5c5e62;
+}
