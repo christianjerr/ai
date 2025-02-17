@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
 const PORT = process.env.PORT || 5000;
 
 const API_KEY = process.env.GEMINI_API_KEY; // Store your API key in a .env file
