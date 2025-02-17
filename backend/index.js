@@ -62,6 +62,14 @@ function sanitizeInput(input) {
     .trim();
 }
 
+app.use(
+  cors({
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
+
 export async function generateResponse(userInput) {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
