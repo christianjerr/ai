@@ -64,7 +64,7 @@ function sanitizeInput(input) {
 
 app.use(
   cors({
-    origin: ["https://ai-beige-eta.vercel.app/"],
+    origin: ["https://ai-front-end-red.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true,
   })
