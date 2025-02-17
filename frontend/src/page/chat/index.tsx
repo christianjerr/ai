@@ -27,7 +27,7 @@ export default function Chat() {
       ]);
 
       axios
-        .post("http://localhost:5000/chat", { prompt: userInput })
+        .post("https://ai-beige-eta.vercel.app/chat", { prompt: userInput })
         .then((response) => {
           setConvoHistory((prevItems) => [
             ...prevItems,
